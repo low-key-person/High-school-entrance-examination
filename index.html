@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<link rel="shortcut icon" href="icon/S myicon.ico"><!-- 标题图标-->  
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">  
+    <title>登陆</title><!--网站标题-->  
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+    <link rel="stylesheet" type="text/css" href="login.js"/> 
+</head>  
+<body>
+    <div id="login">
+        <script>
+            function check() {
+                var name = document.getElementById("name").value;
+                var pass = document.getElementById("pass").value;
+                if (name == "1" && pass == "1") {
+                    alert("登入成功");
+                    window.document.f.action = "./Update/index.html";
+                    window.document.f.submit();
+                } else {
+                    alert("用户名或密码错误");
+                }
+            }
+        </script>
+        <h1>Login</h1>
+        <form name="f" action="">
+            <input type="text" required="required" placeholder="用户名" name="" id="name"></input>
+            <input type="password" required="required" placeholder="密码" name="" id="pass">
+            <button class="but" value="登入" onclick="check()" type="submit"> 登陆</button>
+        </form>
+</body>  
+</html>  
