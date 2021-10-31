@@ -3,21 +3,22 @@
     height: 40px;
     background-color: lightgreen;
 }
-li{
-    width: 200px;
-    height: 100px;
-    background-color: lightskyblue;
-    text-align: center;
-}
 .h301{
     text-align: center;
     width: 200px;
     height: 50px;
     background-color: lightskyblue;
+    border: 1px solid lightcoral;
 }
 .t01{
     color: indianred;
 }
 .t02{
     color: red;
+}
+.row{
+    border: 1px solid red;
+}
+.row>div{
+    border: 1px solid aquamarine;
 }
